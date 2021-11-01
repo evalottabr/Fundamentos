@@ -2,7 +2,7 @@ void main() {
 /* COMENTÁRIOS FINAIS 
 
 Tipos de variáveis:
-1 - var -> Variável genérica;..
+1 - var -> Variável genérica;...
 2 - String -> Para texto;
 3 - int -> Para número inteiros;
 4 - double -> Para números com casas decimais;
