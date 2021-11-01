@@ -2,7 +2,7 @@ void main() {
 /* COMENTÁRIOS FINAIS
 
 - Operadores Lógicos:
-&& : Se ambos os lados for verdadeiro;
+&& : Se ambos os lados for verdadeiro;.
 || : É necessário que um dos lados seja verdadeiro;
 !  : Inverte o valor da operação;
 
