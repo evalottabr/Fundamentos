@@ -1,5 +1,1 @@
-fdfdsfsdfdsfsddsfsdfdsfdf
-dsfdfmdfndsfksngfskjgfsngfsgfnfsgjff
-fsg
-sfgfsgsf
-erewer
+Neste repositório eu publico o meu aprendizado constante em Dart + Flutter;
