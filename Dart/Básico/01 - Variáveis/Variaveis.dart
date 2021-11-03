@@ -1,53 +1,65 @@
 void main() {
   print('Aula 1.0 - Variáveis');
 
+  print("");
+
   var valorA = 10;
   var valorB = 4;
   var valorC = 2.5;
   var resultado;
   resultado = valorA + valorB + valorC;
-
   print(resultado);
+
+  print("");
 
   var salario = 1000, descontos = 250;
   var conta = salario - descontos;
   print(conta);
+
+  print("");
+
   var numero = 3 + ((2 * 4) + (10 / 5));
   print(numero);
 
-  print('');
+  print("");
 
-  print("Concatenar"
-      "Strings"
-      "é simles assim");
+  print('Concatenação de Strings:');
+
+  print("Concatenar " + "Strings" + " é simles assim!");
+
+  print("");
 
   var texto1 = '\nEduardo';
   var texto2 = "Valotta";
   var texto3 = '''\n e Fernanda Lago\n''';
-
   var nome = texto1 + texto2 + texto3;
   print(nome);
+
+  print("");
 
   var verdadeiro = true;
   var falso = false;
   print('verdadeiro = ${verdadeiro}'); //Interpolação.
-  print('falso ' + "$falso"); //Concatenação.
+  print('falso = ' + "$falso"); //Concatenação.
   print(''.runtimeType); //Descobre o tipo de variável em tempo de execução.
+
+  print("");
+
   const pi = 3.14; //Variável constante é atribuida em tempo de compilação.
-  var nome = 'Eduardo'; //Errado (Sem declarar o tipo da variável).
+  String nomeA = 'Eduardo'; //Errado (Sem declarar o tipo da variável).
   String sobrenome = 'Valotta';
   int idade = 38;
   double altura = 1.80;
   bool adulto = true;
-
   print('\nnome: ' +
-      "$nome \nQtd letras: ${nome.length}" +
+      "$nomeA \nQtd letras: ${nomeA.length}" +
       """\nSobrenome: $sobrenome \nQtd letras ${sobrenome.length}\n""");
-
-  print(''' idade: $idade
-altura: $salario
+  print('''idade: $idade
+altura: $altura
 adulto: $adulto
 \npi: $pi\n''');
+
+  print("");
 
   dynamic variavel = 2.0;
   variavel = 2;
