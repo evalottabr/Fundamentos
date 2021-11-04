@@ -36,10 +36,14 @@ void main() {
   //Simulação de um número infinito no console.
   print(12.gcd(16));
   //Retorna o máximo divisor comum.
+  print('1'.padLeft(2, '0'));
+  //Exemplo: Parâmetro: 2 casas decimais com o 0 do lado esquerdo.
+  print('5'.padRight(2, '0'));
+  //Exemplo: Parâmetro: 2 casas decimais com o 0 do lado direito.
 
   print("");
 
-  print('> Principais funções da variável String');
+  print('> Principais funções da variável String:');
 
   String nome = 'Eduardo';
   String nomeCompleto = '\t Eduardo Valotta';
@@ -59,7 +63,7 @@ void main() {
   print(nome.split(''));
   //Neste caso você tem a variável dividida e retornada em um array.
   print(nome.substring(3, 7));
-  //Nesta função você define um index inicial e um index final. 
+  //Nesta função você define um index inicial e um index final.
   //O substring trabalha como propriedade lenght, onde cada letra representa um index, a primeira letra tem o valor zero.
   print(nome.startsWith('E'));
   //Verifica se o nome inicia com "E", e retorna true ou false.
@@ -73,14 +77,14 @@ void main() {
   // A partir do índice faz a substituição pelo segundo argumento (Troca o "o" po "a").
   print(nome.replaceRange(2, 4, ''));
   // Substitui uma sequencia de acordo com o índice especificado (Neste caso por uma String vazia).
-  print(nomeCompleto.trim().split(' ')); 
+  print(nomeCompleto.trim().split(' '));
   //Exemplo de combinações de funções.
   print(nome.contains('E'));
   //Verifica se a variável contém aquele valor(Retorna true ou false).
   print(nome.contains('E', 0));
   //Verifica se o parâmetro associado a um índice é verdadeiro.
   print(nome.indexOf('ardo'));
-  //Retona o índice de acordo com a referência passada no parâmetro.
+  //Retona o índice a partir referência passada no parâmetro.
   print(nome.length);
   //Retorna o curmprimento do do array (lenght não é uma função, é um get).
   print(nome.endsWith('o'));
@@ -93,4 +97,29 @@ void main() {
   //Retorna -1 se for diferente.
   print(' '.isEmpty);
   //Verifica se a String é vazia (Seria vazia se não tivesse um espaço).
+  print(nome.lastIndexOf('o'));
+  //Retorna o índice nesta variável que possui este parâmetro.
+
+  print("");
+
+  print('> Analisando uma String');
+
+  print(double.parse('10'));
+  //Analisa se a String é um double e printa, caso contrário,traz uma mensagem de erro.
+  
+  print('1' is String);
+  //Este caso é uma pergunta dentro do parâmetro: É uma String? Respostas: false ou true.
+  
+  print(int.parse('15') is int);
+  //Este caso é uma pergunta fora do parâmetro: É um inteiro? Respostas: false ou true.
+
+  String sopa = 'Sopa de letrinhas';
+  //Criação da variável tipo String: 'Sopa de letrinhas'.
+  
+  int index = sopa.indexOf(' de ');
+  //Armazena o valor a partir do índice "de" (No caso: "de letrinhas"; da String "Sopa de letrinhas") na variável "index".
+  
+  print('A sopa é ${sopa.substring(index).trim()}');
+  //Print do texto "A sopa é" interpolado com a variável "index" (de letrinhas), + o trim (Para remover os espaços do início e do fim do texto).
+
 }
