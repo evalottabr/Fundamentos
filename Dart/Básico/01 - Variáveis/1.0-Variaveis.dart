@@ -68,7 +68,7 @@ void main() {
 
   String meuNome = 'Eduardo';
   print('O nome $meuNome tem ${meuNome.length} letras!');
-  // Quando for necessário fazer alguma operação na concatenação deve-se usar "${";
+  // Quando for necessário fazer alguma operação dentro de uma String deve-se usar "${";
 }
 
 /* COMENTÁRIOS FINAIS 
